@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
+public class ControlLamp : MonoBehaviour
 {
     private LoopbackAudio _loopbackAudio;
 
@@ -17,8 +17,10 @@ public class Test : MonoBehaviour
     public float decay;
     private float previousCounter = 0;
 
-    public enum RangeState{ average, min, max };
+    public enum RangeState { average, min, max };
     public RangeState rangeState;
+
+    public Light lamp;
 
     // Start is called before the first frame update
     void Start()
@@ -74,11 +76,11 @@ public class Test : MonoBehaviour
 
         if( counter > previousCounter )
         {
-            transform.localScale = Vector3.one * Mathf.Lerp( transform.localScale.x, counter, attack * time );
+            lamp.intensity = Mathf.Lerp( lamp.intensity, counter, attack * time );
         }
         else
         {
-            transform.localScale = Vector3.one * Mathf.Lerp( transform.localScale.x, counter, decay * time );
+            lamp.intensity = Mathf.Lerp( lamp.intensity, counter, decay * time );
         }
 
         //transform.localScale = Vector3.one * counter * multiplier;

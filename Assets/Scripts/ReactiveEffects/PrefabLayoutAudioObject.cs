@@ -50,12 +50,20 @@ public class PrefabLayoutAudioObject : VisualizationEffectBase
         {
             GameObject newGameObject = Instantiate(Prefab);
             newGameObject.transform.parent = gameObject.transform;
+            newGameObject.transform.localScale = Vector3.one * 0.1f;
+            newGameObject.transform.eulerAngles = gameObject.transform.parent.transform.eulerAngles;
             _gameObjects.Add(newGameObject);
 
             int group = (i / groupSize);
 
             Renderer rend = newGameObject.GetComponent<Renderer>();
-            Color color = Globals.StrongColors[group];
+            //Color color = Globals.StrongColors[group];
+
+            float colorrr = Mathf.InverseLerp(0, LoopbackAudio.SpectrumSize, i);
+
+            Debug.Log( colorrr );
+
+            Color color = Color.HSVToRGB( colorrr, 1, 1 );
             rend.material.SetColor("_Color", color);
             rend.material.SetColor("_EmissionColor", color);
 
