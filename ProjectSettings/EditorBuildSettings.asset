@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Cool1.unity
     guid: 3621a7a76105b3a4997f9666fe51dc84
+  - enabled: 1
+    path: Assets/_scenes/OrangeBackground.unity
+    guid: 54b4c44d2980f3f4b987ea1731ea4f37
   m_configObjects: {}
