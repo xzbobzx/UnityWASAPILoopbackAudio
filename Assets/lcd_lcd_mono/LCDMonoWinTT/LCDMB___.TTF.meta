@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: bacc261238eb08343affe57827a01fa6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: LCDMono
+  fontNames:
+  - LCDMono
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 083a44a1f3663944eb5835b7cf7f754b, type: 3}
+  - {fileID: 12800000, guid: 884204dec25038a4597a134ef42dfbdd, type: 3}
+  - {fileID: 12800000, guid: 2066bcee35dc5864fb476a4ff3c71a1d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

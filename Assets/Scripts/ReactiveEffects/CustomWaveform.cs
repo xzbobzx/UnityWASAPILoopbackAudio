@@ -43,7 +43,7 @@ public class CustomWaveform : MonoBehaviour
             Renderer rend = newBar.GetComponent<Renderer>();
             float colorrr = Mathf.InverseLerp( 0, loopbackAudio.SpectrumSize - 1, i);
 
-            Debug.Log( colorrr );
+            //Debug.Log( colorrr );
 
             Color color = Color.Lerp( start, end, colorrr );
             rend.material.SetColor( "_Color", color );

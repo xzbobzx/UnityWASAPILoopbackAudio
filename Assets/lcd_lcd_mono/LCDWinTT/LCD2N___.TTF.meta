@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: cf04895681bc0614883f048b468b64ac
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: LCD2
+  fontNames:
+  - LCD2
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c963b7c3d5933404686acd5d8f8df3c9, type: 3}
+  - {fileID: 12800000, guid: cd6e84f4ad71c3a44bf73fafc537a008, type: 3}
+  - {fileID: 12800000, guid: ba67709cc636e7b44b273f8a534627fa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
