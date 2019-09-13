@@ -19,3 +19,9 @@ Instructions:
 That's it!
 
 You won't see the bar analyzer until you hit Play - it's instantiated at runtime.
+
+--
+
+To use VLC filename http interfacing, set your VLC desktop shortcut target to:
+
+"[path/vlc.exe]" --intf qt --extraintf=http --http-password password
